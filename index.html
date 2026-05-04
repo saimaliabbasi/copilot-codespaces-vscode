@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: #f8fafc;
+      }
+      header {
+        padding: 40px 20px;
+        text-align: center;
+        background: rgba(15, 23, 42, 0.96);
+        box-shadow: 0 8px 32px rgba(15, 23, 42, 0.35);
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 30px 20px;
+      }
+      .hero {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        color: #e2e8f0;
+      }
+      .hero p {
+        line-height: 1.75;
+        color: #cbd5e1;
+      }
+      .card {
+        background: rgba(30, 41, 59, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.15);
+        border-radius: 18px;
+        padding: 24px;
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3);
+      }
+      .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .label {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: #94a3b8;
+        margin-bottom: 10px;
+      }
+      .footer {
+        margin-top: 40px;
+        text-align: center;
+        color: #9ca3af;
+      }
+      .anime-character {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 16px;
+        font-size: 1rem;
+        color: #38bdf8;
+      }
+      .anime-character span {
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="hero">
+          <div class="card">
+            <h1>Hi, I’m Saimali.</h1>
+            <p>
+              Welcome to my portfolio website. I build clean, creative projects and I enjoy adding a playful anime touch to every page.
+              Here’s a quick snapshot of my skills, contact details, and a fun anime character cameo.
+            </p>
+            <div class="anime-character">
+              <span>🌸</span>
+              <strong>Favorite anime character:</strong> Sailor Moon
+            </div>
+          </div>
+          <div class="card">
+            <div class="label">Contact</div>
+            <p>
+              Email: <strong>hello@example.com</strong><br />
+              Location: <strong>Remote / Online</strong><br />
+              Phone: <strong>+123 456 7890</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="grid" style="margin-top: 30px;">
+          <div class="card">
+            <div class="label">About Me</div>
+            <p>
+              I am passionate about front-end development, design, and creating engaging web experiences. I love mixing modern UI with a touch of character and fun.
+            </p>
+          </div>
+          <div class="card">
+            <div class="label">Projects</div>
+            <p>
+              This portfolio page is the first step. Next I’ll add animated sections, project case studies, and a stronger visual theme with custom artwork.
+            </p>
+          </div>
+          <div class="card">
+            <div class="label">More Changes</div>
+            <p>
+              Additional details can be added here: skills, testimonials, and link to GitHub or social profiles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      Made with simple HTML & CSS. Anime inspiration included.
+    </footer>
+  </body>
+</html>
